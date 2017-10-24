@@ -6,7 +6,10 @@
 
 Источники:
 
-[rifco.ru] (https://rifco.ru)
-[SecureMyWP] (https://securemywp.ru) - продлевать не буду, домен скоро закончится
-[SecureWP] (https://securewp.ru)
-[ВК] (https://vk.com/securewp)
+[rifco.ru](https://rifco.ru)
+
+[SecureMyWP](https://securemywp.ru) - продлевать не буду, домен скоро закончится
+
+[SecureWP](https://securewp.ru)
+
+[ВК](https://vk.com/securewp)
