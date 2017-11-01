@@ -7,7 +7,7 @@ tags: [CSRF, lostpassword, Password Reset, rp_key, wp-login.php]
 canonical: https://securemywp.ru/2015/02/01/lostpassword-уязвимость-в-wp-login-php/
 ---
 
-Уязвимость в форме восстановления пароля в файле <code>/wp-login?action=lostpassword</code>, выявлена в ноябре 2014 г. Тип уязвимости <code>CSRF</code>. Устранена введением нового параметра <code>rp_key</code>.
+Уязвимость в форме восстановления пароля в файле `/wp-login?action=lostpassword`, выявлена в ноябре 2014 г. Тип уязвимости `CSRF`. Устранена введением нового параметра `rp_key`.
 
 Уязвимость действительна вплоть до версии вордпресса 4.0, устранена в версии 4.0.1.
 
