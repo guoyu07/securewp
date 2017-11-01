@@ -7,10 +7,10 @@ tags: [.htaccess, Cross Site Scripting, Header, X-XSS-Protection, XSS, XSS Prote
 canonical: https://securemywp.ru/2014/12/25/заголовок-x-xss-protection/
 ---
 
-Для защиты от некоторых типов XSS-атак (Межсайтовый скриптинг) рекомендуется добавить такой заголовок в ответы сервера: <code>X-XSS-Protection: 1; mode=block</code>, добавив в <code>.htaccess</code>:
+Для защиты от некоторых типов XSS-атак (Межсайтовый скриптинг) рекомендуется добавить такой заголовок в ответы сервера: `X-XSS-Protection: 1; mode=block`, добавив в `.htaccess`:
 
-<pre><code>
+```html
 <IfModule mod_headers.c>
 Header set X-XSS-Protection "1; mode=block"
 </IfModule>
-</code></pre>
+```
