@@ -11,11 +11,11 @@ canonical: https://securemywp.ru/2014/12/03/усиливаем-wp-content/
 
 В общем, есть смысл попробовать защитить от внешних вызовов <code>wp-content</code>, поместив в нем в <code>.htaccess</code>:
 
-<pre><code>
-&lt;FilesMatch .php&gt;
+```html
+<FilesMatch .php>
 Order Deny,Allow
 Deny from All
-&lt;/Files&gt;
-</code></pre>
+</Files>
+```
 
 После этого надо внимательно посмотреть — правильно ли работают тема и плагины. Если да, оставляем. Если нет, переносим это же в папку <code>Uploads</code>, там уж точно сломать нечего, а какой-то смысл есть.
