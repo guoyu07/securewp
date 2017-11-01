@@ -7,17 +7,17 @@ tags: [.htaccess, application/ecmascript, application/javascript, application/x-
 canonical: https://securemywp.ru/2014/12/26/заголовок-x-content-type-options-nosniff/
 ---
 
-Еще один рекомендованный заголовок ответа сервера: <code>X-Content-Type-Options: nosniff</code> препятствует броузеру загружать стили и скрипты с неправильно заданным MIME типом (поддерживают IE и Chrome).
+Еще один рекомендованный заголовок ответа сервера: `X-Content-Type-Options: nosniff` препятствует броузеру загружать стили и скрипты с неправильно заданным MIME типом (поддерживают IE и Chrome).
 Соответственно:
-<pre><code>
+```html
 <IfModule mod_headers.c>
 Header set X-Content-Type-Options nosniff
 </IfModule>
-</code></pre>
+```
 [Подробности…](http://msdn.microsoft.com/en-us/library/ie/gg622941(v=vs.85).aspx)
 
-Если коротко, при наличии этого заголовка броузер не станет загружать стиль, если его MIME-type не "text/css" и не будет загружать скрипт, если его MIME-type не один из:
-<pre><code>
+Если коротко, при наличии этого заголовка броузер не станет загружать стиль, если его MIME-type не `"text/css"` и не будет загружать скрипт, если его MIME-type не один из:
+```
 "application/ecmascript"
 "application/javascript"
 "application/x-javascript"
@@ -27,5 +27,5 @@ Header set X-Content-Type-Options nosniff
 "text/x-javascript"
 "text/vbs"
 "text/vbscript"
-</code></pre>
+```
 [Подробнее](https://htaccess.wordpress.com/2009/09/22/x-content-type-options-nosniff-header/)
