@@ -1,0 +1,11 @@
+name: Konstantin Lyakhov (komstin)
+markdown: kramdown
+permalink: /securewp/:year/:month/:day/:title
+
+theme: jekyll-theme-tactile
+
+collections:
+  my_categories:
+    output: true
+    permalink: /securewp/category/:name/
+    
