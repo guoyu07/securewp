@@ -9,7 +9,7 @@ canonical: https://securemywp.ru/2014/12/26/заголовок-x-content-type-op
 
 Еще один рекомендованный заголовок ответа сервера: `X-Content-Type-Options: nosniff` препятствует броузеру загружать стили и скрипты с неправильно заданным MIME типом (поддерживают IE и Chrome).
 Соответственно:
-```html
+```apache
 <IfModule mod_headers.c>
 Header set X-Content-Type-Options nosniff
 </IfModule>
