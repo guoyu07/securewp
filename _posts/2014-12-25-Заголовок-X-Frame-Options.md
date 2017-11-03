@@ -9,7 +9,7 @@ canonical: https://securemywp.ru/2014/12/25/заголовок-x-frame-options/
 
 Для защиты от так называемого [ClickJacking](https://ru.wikipedia.org/wiki/Кликджекинг), когда контент вашего сайта встраивается (`iframe`) на странице другого сайта, рекомендуется добавить такой заголовок в ответе сервера: `X-Frame-Options: SAMEORIGIN`, например так (в `.htaccess`):
 
-```html
+```apache
 <IfModule mod_headers.c>
 Header always append X-Frame-Options SAMEORIGIN
 </IfModule>
