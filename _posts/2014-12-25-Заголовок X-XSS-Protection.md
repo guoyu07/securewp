@@ -9,7 +9,7 @@ canonical: https://securemywp.ru/2014/12/25/заголовок-x-xss-protection/
 
 Для защиты от некоторых типов XSS-атак (Межсайтовый скриптинг) рекомендуется добавить такой заголовок в ответы сервера: `X-XSS-Protection: 1; mode=block`, добавив в `.htaccess`:
 
-```html
+```apache
 <IfModule mod_headers.c>
 Header set X-XSS-Protection "1; mode=block"
 </IfModule>
