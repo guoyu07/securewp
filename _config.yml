@@ -1,6 +1,6 @@
 name: Konstantin Lyakhov (komstin)
 markdown: kramdown
-permalink: /securewp/:year/:month/:day/:title
+permalink: /:year/:month/:day/:title
 
 theme: jekyll-theme-tactile
 
